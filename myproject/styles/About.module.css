@@ -1,0 +1,87 @@
+.aboutpage {
+  background-image: url("../public/arc.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-position: center;
+  align-items: center;
+}
+
+.parent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+/* Styles pour chaque carte (card) */
+.card {
+  background: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  height: 450px; 
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px); /* Effet de flou pour le verre */
+  margin: 20px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  
+}
+
+/* Styles pour le contenu à l'intérieur de chaque carte */
+.content {
+  text-align: center;
+  transition: 0.4s;
+  color: white;
+  /*transform: translateY(100px);
+  opacity: 0;*/
+}
+
+/*.content:hover {
+  transform: translateY(0px);
+  opacity: 1;
+}*/
+
+.titre2 {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  padding: 20px;
+  font-size: 5em;
+  color: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+.titre3 {
+  font-size: 1.8em;
+  z-index: 1;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 8px 20px;
+  border: none;
+  color: black;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  margin: 15px;
+}
+
+/* Media Query pour rendre les cartes réactives + background */
+@media screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+  }
+
+  .aboutpage {
+    background-size: cover;
+    height: 100%;
+  }
+}
