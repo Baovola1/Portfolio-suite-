@@ -7,6 +7,8 @@ import { CardActionArea } from "@mui/material";
 import CardMedia from "@mui/material/CardMedia";
 
 export default function Project() {
+ 
+
   return (
     <>
       <Header />
@@ -27,16 +29,19 @@ export default function Project() {
             height: "400px",
           }}
         >
-          <CardActionArea>
+          <CardActionArea >
             <div data-aos="fade-right">
               <CardMedia
                 sx={{ height: "100%", width: "100%" }}
                 component="video"
-                controls
                 alt="video"
+                muted
+                loop
+                autoPlay
+                
               >
                 <source
-                  src="/adele-someone-like-you_843273.mp4"
+                  src="/curlybrace.mp4"
                   type="video/mp4"
                 />
               </CardMedia>

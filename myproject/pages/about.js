@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import VanillaTilt from "vanilla-tilt";
 import styles from "../styles/About.module.css";
-import ConstructionIcon from '@mui/icons-material/Construction';
+import ConstructionIcon from "@mui/icons-material/Construction";
 
 export default function About() {
   const [showMore, setShowMore] = useState(true);
@@ -37,6 +37,7 @@ export default function About() {
   return (
     <>
       <Header />
+
       <div className={styles.aboutpage}>
         <div className={styles.parent}>
           <div data-aos="fade-down-right">
@@ -101,7 +102,7 @@ export default function About() {
             <div className={`${styles.card} card`}>
               <div className={styles.content}>
                 <h2 className={styles.titre2}>03</h2>
-                <ConstructionIcon sx={{ mr: 2, color: "white" }}/>
+                <ConstructionIcon sx={{ mr: 2, color: "white" }} />
                 <h3 className={styles.titre3}>Outils</h3>
                 {outil && (
                   <ul>
