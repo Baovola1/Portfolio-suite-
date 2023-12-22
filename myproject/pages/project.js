@@ -5,14 +5,13 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import CardMedia from "@mui/material/CardMedia";
+import Layout from "@/components/Layout";
 
 export default function Project() {
- 
-
   return (
     <>
-      <Header />
-
+     <Layout>
+      <div className="p-20">
       <Container
         sx={{
           display: "grid",
@@ -21,15 +20,17 @@ export default function Project() {
           justifyContent: "center",
           alignItems: "center",
           padding: "20px",
+          
         }}
       >
         <Card
           sx={{
             borderRadius: "15px",
             height: "400px",
+            
           }}
         >
-          <CardActionArea >
+          <CardActionArea>
             <div data-aos="fade-right">
               <CardMedia
                 sx={{ height: "100%", width: "100%" }}
@@ -38,12 +39,8 @@ export default function Project() {
                 muted
                 loop
                 autoPlay
-                
               >
-                <source
-                  src="/curlybrace.mp4"
-                  type="video/mp4"
-                />
+                <source src="/curlybrace.mp4" type="video/mp4" />
               </CardMedia>
               <CardContent>
                 <Typography
@@ -217,6 +214,8 @@ export default function Project() {
           </CardActionArea>
         </Card>
       </Container>
+      </div>
+      </Layout>
     </>
   );
 }

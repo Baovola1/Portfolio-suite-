@@ -9,8 +9,12 @@
 
 .acceuilpage {
   background-image: url(../public/backgrd.jpg);
-  min-height: 100vh;
+  min-height: 75vh;
   background-size: cover;
+  margin: 25px;
+  border-radius: 15px;
+  /*min-width: 100vw;*/
+ 
   
 }
 
