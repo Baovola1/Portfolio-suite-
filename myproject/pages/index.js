@@ -11,7 +11,7 @@ export default function Index() {
       <Head>
         <title>My project</title>
       </Head>
-      <Header />
+      
       <main className="mt-0 p-5">
         <section id="index" className=" p-10 m-8">
           <Acceuil />
