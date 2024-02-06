@@ -5,12 +5,11 @@
   background-image: url(../public/fond.jpg);
   min-height: 75vh;
   background-size: cover;
-  margin: 0;
+  margin: 20px;
   border-radius: 10px;
-  display: flex; /* Flex pour permettre le centrage */
-  justify-content: center; /* Centrage horizontal */
-  align-items: center; /* Centrage vertical */
-  
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .text1 {
