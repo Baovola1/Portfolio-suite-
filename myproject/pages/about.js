@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import VanillaTilt from "vanilla-tilt";
 import styles from "../styles/About.module.css";
 import ConstructionIcon from "@mui/icons-material/Construction";
-import Layout from "@/components/Layout";
 
 export default function About() {
   const [showMore, setShowMore] = useState(true);
@@ -38,8 +37,7 @@ export default function About() {
   return (
     <>
    
-      <Layout>
-
+      
       <div className={styles.aboutpage}>
         <div className={styles.parent}>
           <div data-aos="fade-down-right">
@@ -144,7 +142,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      </Layout>
+      
       
     </>
   );

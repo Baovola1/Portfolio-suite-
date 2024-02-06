@@ -5,12 +5,11 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import CardMedia from "@mui/material/CardMedia";
-import Layout from "@/components/Layout";
 
 export default function Project() {
   return (
     <>
-     <Layout>
+     
       <div className="p-20">
       <Container
         sx={{
@@ -215,7 +214,7 @@ export default function Project() {
         </Card>
       </Container>
       </div>
-      </Layout>
+      
     </>
   );
 }

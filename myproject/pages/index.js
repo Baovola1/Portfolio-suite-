@@ -3,11 +3,11 @@ import Header from "@/components/Header";
 import Acceuil from "@/components/Acceuil";
 import About from "./about";
 import Project from "./project";
-import Layout from "@/components/Layout";
+
 
 export default function Index() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>My project</title>
       </Head>
@@ -23,6 +23,6 @@ export default function Index() {
           <Project />
         </section>
       </main>
-    </Layout>
+    </>
   );
 }
