@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+
+.container {
+  background-image: url(../public/fond.jpg);
+  min-height: 75vh;
+  background-size: cover;
+  margin: 25px;
+  border-radius: 10px;
+  
+}
+
 .text1 {
   text-align: center;
   padding: 20px;
@@ -7,43 +18,7 @@
   font-size: 1.5rem;
 }
 
-.acceuilpage {
-  background-image: url(../public/backgrd.jpg);
-  min-height: 75vh;
-  background-size: cover;
-  margin: 25px;
-  border-radius: 15px;
-  /*min-width: 100vw;*/
- 
-  
-}
 
-/* Styles pour chaque carte (card) */
-.card {
-  background: rgba(255, 255, 255, 0.2); /* Couleur de fond avec transparence */
-  border-radius: 10px;
-  padding: 20px;
-  width: 80%;
-  height: 60vh;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(15px); /* Effet de flou pour le verre */
-  margin: 40px;
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
 
-/* Styles pour le contenu à l'intérieur de chaque carte */
-.content {
-  text-align: center;
-  transition: 0.4s;
-  color: white;
-  /*transform: translateY(100px);
-  opacity: 0;*/
-  justify-content: center;
-}
 
-.btn {
-  position: relative;
-  display: inline-block;
-}
+
