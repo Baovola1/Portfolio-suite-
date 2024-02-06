@@ -22,7 +22,7 @@ export default function Header() {
 
   
   return (
-    <header className="bg-gray-800 text-white p-4 w-full z-50 fixed " >
+    <header className="bg-slate-800 text-white p-4 w-full z-50 fixed " >
       <div className="flex items-center justify-between">
         <Stack direction="row" spacing={2}>
           <Avatar alt="photo" src="/photo.png" sx={{ width: 56, height: 56 }} />
