@@ -91,13 +91,13 @@ export default function About() {
               <div className={styles.content} onMouseEnter={ handleMouseEnterInterets}
         onMouseLeave={handleMouseLeaveInterets}>
                 <h2 className={styles.titre2}>03</h2>
-                {!showListInterets && <h3 className={styles.titre3}>Centre d'intérêt</h3>}
+                {!showListInterets && <h3 className={styles.titre3}>Formations</h3>}
                 {showListInterets && (
           
           <ul>
-                    <li>Voyager</li>
-                    <li>Cuisine du monde</li>
-                    <li>Tennis</li>
+                    <li>Orsys Digital School</li>
+                    <li>LaCapsule:Titre RNCP niveau6</li>
+                    <li>Master2(RGPD,Droit de la propriété Intellectuel)</li>
                   </ul>
 
 
