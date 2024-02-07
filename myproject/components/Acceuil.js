@@ -1,10 +1,10 @@
 "use client";
-import { useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import Container from "@mui/material/Container";
 import styles from "../styles/Acceuil.module.css";
 import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
+
 
 export default function Acceuil() {
   const [dynamicText] = useTypewriter({
@@ -18,6 +18,9 @@ export default function Acceuil() {
   return (
     <>
       <div className={styles.container}>
+      <video autoPlay loop muted style={{ position: "absolute", width: "100%", left: "0", top: "0", height: "100%", objectFit: "cover", zIndex: "-1" }}>
+          <source src="/video.mp4" type="video/mp4" />
+        </video>
         <div data-aos="fade-right">
           <Container
             fixed

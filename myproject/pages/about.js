@@ -82,6 +82,29 @@ export default function About() {
                 </div>
             </div>
 {/* Card3*/}
+<div class="bg-blue-800/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
+              <div className={styles.content} onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}>
+                <h2 className={styles.titre2}>03</h2>
+                {!showListOutils && <h3 className={styles.titre3}>Centre d'intérêt</h3>}
+                {showListOutils && (
+          
+          <ul>
+                    <li>Méthodologie AGILE</li>
+                    <li>Méthodologie Scrum</li>
+                    <li>User Stories</li>
+                    <li>intelliJ</li>
+                    <li>PhpStorm</li>
+                    <li>Eclipse IDE for Enterprise</li>
+                    <li>Git</li>
+                  </ul>
+
+
+        )}
+                </div>
+            </div>
+
+
             </div>
             </div>
     </>
