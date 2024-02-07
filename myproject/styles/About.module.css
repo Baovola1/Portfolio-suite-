@@ -1,5 +1,6 @@
+
 .container {
-  background-color: pink;
+  background-color: white;
   min-height: 75vh;
   background-size: cover;
   margin: 20px;
@@ -7,7 +8,8 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  
+  overflow: hidden;
+ 
 }
 
 

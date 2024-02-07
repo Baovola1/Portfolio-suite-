@@ -1,23 +1,24 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import VanillaTilt from "vanilla-tilt";
+import React, { useEffect,useState } from "react";
 import styles from "../styles/About.module.css";
-
+import VanillaTilt from "vanilla-tilt";
 
 export default function About() {
- 
- const [showList, setShowList] = useState(false);
- const [showListOutils, setShowListOutils] = useState(false);
+  const [showListSkills, setShowListSkills] = useState(false);
+  const [showListOutils, setShowListOutils] = useState(false);
+  const [showListInterets, setShowListInterets] = useState(false); 
 
- // Fonction pour changer le contenu après l'effet de zoom
- const handleMouseEnter = () => {
-   setTimeout(() => setShowList(true), 400); // Retard pour laisser l'effet de zoom se terminer
- };
+  // Gestionnaires pour "Hard skills"
+  const handleMouseEnterSkills = () => setShowListSkills(true);
+  const handleMouseLeaveSkills = () => setShowListSkills(false);
 
- const handleMouseLeave = () => {
-   setShowList(false);
-   
- };
+  // Gestionnaires pour "Outils"
+  const handleMouseEnterOutils = () => setShowListOutils(true);
+  const handleMouseLeaveOutils = () => setShowListOutils(false);
+
+  // Gestionnaires pour "Centre d'intérêt"
+  const handleMouseEnterInterets = () => setShowListInterets(true);
+  const handleMouseLeaveInterets = () => setShowListInterets(false);
 
   useEffect(() => {
     VanillaTilt.init(document.querySelectorAll(".card"), {
@@ -27,23 +28,22 @@ export default function About() {
       "max-glare": 1,
     });
   }, []);
-
- 
-
- 
+   
 
   return (
-   <>
-      <div className={styles.container}>
+    <>
+    
+    <div className={styles.container}>
           {/* Contenu container*/}
-          <div className="grid grid-cols-1 gap-1 md:grid-cols-3 md:gap-4"> 
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-7"> 
           {/* Card1*/}
-          <div class="bg-blue-800/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
-              <div className={styles.content} onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
+          <div data-aos="fade-right">
+          <div className="card bg-blue-800/60 bg-opacity-20 backdrop-blur-md rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center cercleZoom">
+              <div className={styles.content} onMouseEnter={handleMouseEnterSkills}
+        onMouseLeave={ handleMouseLeaveSkills}>
                 <h2 className={styles.titre2}>01</h2>
-                {!showList && <h3 className={styles.titre3}>Hard skills</h3>}
-                {showList && (
+                {!showListSkills  && <h3 className={styles.titre3}>Hard skills</h3>}
+                {showListSkills && (
           
           <ul>
           <li>JavaEE</li>
@@ -59,10 +59,12 @@ export default function About() {
         )}
                 </div>
             </div>
+            </div>
             {/* Card2*/}
-            <div class="bg-blue-800/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
-              <div className={styles.content} onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
+            <div data-aos="zoom-out-up">
+            <div class="card bg-red-400/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
+              <div className={styles.content} onMouseEnter={handleMouseEnterOutils}
+        onMouseLeave={ handleMouseLeaveOutils}>
                 <h2 className={styles.titre2}>02</h2>
                 {!showListOutils && <h3 className={styles.titre3}>Outils</h3>}
                 {showListOutils && (
@@ -81,32 +83,35 @@ export default function About() {
         )}
                 </div>
             </div>
+            </div>
 {/* Card3*/}
-<div class="bg-blue-800/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
-              <div className={styles.content} onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}>
+<div data-aos="fade-left">
+
+<div class=" card bg-purple-400/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
+              <div className={styles.content} onMouseEnter={ handleMouseEnterInterets}
+        onMouseLeave={handleMouseLeaveInterets}>
                 <h2 className={styles.titre2}>03</h2>
-                {!showListOutils && <h3 className={styles.titre3}>Centre d'intérêt</h3>}
-                {showListOutils && (
+                {!showListInterets && <h3 className={styles.titre3}>Centre d'intérêt</h3>}
+                {showListInterets && (
           
           <ul>
-                    <li>Méthodologie AGILE</li>
-                    <li>Méthodologie Scrum</li>
-                    <li>User Stories</li>
-                    <li>intelliJ</li>
-                    <li>PhpStorm</li>
-                    <li>Eclipse IDE for Enterprise</li>
-                    <li>Git</li>
+                    <li>Voyager</li>
+                    <li>Cuisine du monde</li>
+                    <li>Tennis</li>
                   </ul>
 
 
         )}
                 </div>
             </div>
+            </div>  
 
 
-            </div>
-            </div>
+          {/* final*/}
+        </div>
+      </div>
     </>
-  )
+  );
 }
+
+   

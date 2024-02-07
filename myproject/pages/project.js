@@ -9,8 +9,8 @@ import CardMedia from "@mui/material/CardMedia";
 export default function Project() {
   return (
     <>
-     
-      <div className="p-20">
+    
+    <div className="p-20">
       <Container
         sx={{
           display: "grid",
@@ -214,7 +214,7 @@ export default function Project() {
         </Card>
       </Container>
       </div>
-      
+
     </>
   );
 }

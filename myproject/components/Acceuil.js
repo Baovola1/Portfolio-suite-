@@ -21,7 +21,7 @@ export default function Acceuil() {
       <video autoPlay loop muted style={{ position: "absolute", width: "100%", left: "0", top: "0", height: "100%", objectFit: "cover", zIndex: "-1" }}>
           <source src="/video.mp4" type="video/mp4" />
         </video>
-        <div data-aos="fade-right">
+        
           <Container
             fixed
             sx={{
@@ -71,7 +71,7 @@ export default function Acceuil() {
               </CardContent>
             </Card>
           </Container>
-        </div>
+        
       </div>
     </>
   );
