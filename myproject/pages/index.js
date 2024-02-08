@@ -16,7 +16,7 @@ export default function Index() {
         <section id="about" className=" p-10 m-8">
           <About />
         </section>
-        <section id="project" className="bg-gray-100 p-8 m-8">
+        <section id="project">
           <Project />
         </section>
       </main>

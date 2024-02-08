@@ -2,15 +2,7 @@
 .container {
   background-color: white;
   min-height: 75vh;
-  background-size: cover;
-  margin: 20px;
-  border-radius: 10px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
   overflow: hidden;
- 
-
  
 }
 
