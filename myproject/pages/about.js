@@ -33,7 +33,7 @@ export default function About() {
   return (
     <>
     
-    <div className={styles.container}>
+    <div className={`${styles.container} flex items-center justify-center h-screen`}>
           {/* Contenu container*/}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-7"> 
           {/* Card1*/}
@@ -62,7 +62,7 @@ export default function About() {
             </div>
             {/* Card2*/}
             <div data-aos="zoom-out-up">
-            <div class="card bg-red-400/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
+            <div className="card bg-red-400/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
               <div className={styles.content} onMouseEnter={handleMouseEnterOutils}
         onMouseLeave={ handleMouseLeaveOutils}>
                 <h2 className={styles.titre2}>02</h2>
@@ -87,7 +87,7 @@ export default function About() {
 {/* Card3*/}
 <div data-aos="fade-left">
 
-<div class=" card bg-purple-400/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
+<div className=" card bg-purple-400/60 bg-opacity-20 backdrop-blur-md  rounded-full p-5 w-60 h-60 shadow-2xl overflow-hidden flex items-center justify-center">
               <div className={styles.content} onMouseEnter={ handleMouseEnterInterets}
         onMouseLeave={handleMouseLeaveInterets}>
                 <h2 className={styles.titre2}>03</h2>
