@@ -2,6 +2,7 @@ import Head from "next/head";
 import Acceuil from "@/components/Acceuil";
 import About from "./about";
 import Project from "./project";
+import Footer from "@/components/Footer";
 
 export default function Index() {
   return (
@@ -20,6 +21,7 @@ export default function Index() {
           <Project />
         </section>
       </main>
+      <Footer/>
     </>
   );
 }
