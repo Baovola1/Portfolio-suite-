@@ -78,9 +78,10 @@ export default function Footer() {
           src="/icon.jpg"
           alt="Contact"
         />
+         
         {isModalOpen && (
           <div className="mt-4 md:mt-0 md:ml-10 bg-blue-800/60 backdrop-blur border border-white/50 text-black p-4 rounded-lg w-full md:max-w-xs">
-            <h2 className="text-lg font-semibold mb-4 text-center text-white">Merci de me contacter</h2>
+            <h2 className="text-lg font-semibold mb-4 text-center text-white">Vous pouvez laisser votre message 😊</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <input
                 className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"

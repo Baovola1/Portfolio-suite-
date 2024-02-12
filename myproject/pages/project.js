@@ -45,32 +45,35 @@ export default function Project() {
   {/* Div rouge avec carte contenant une vidéo */}
   <div className="flex justify-start white w-full mt-10">
   <GlobalVisionTitle />
-    <div className="m-4 mt-4 bg-white shadow-lg rounded-lg max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full h-auto p-4 ml-10"> 
+    <div className="m-4 mt-4 bg-slate-800 shadow-lg rounded-lg max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full h-auto p-4 ml-10"> 
       {/* Intégration vidéo */}
       <video className="w-full h-auto rounded" autoPlay muted >
-        <source src="/video.mp4" type="video/mp4" />  
-      </video>    
+        <source src="/globalvision.mp4" type="video/mp4" />  
+      </video> 
+      <p className="text-justify text-white">Globalvision est un logiciel commercial complet qui permet de gérer les produits, les clients et les transactions. Il offre également des fonctionnalités avancées telles que la visualisation de la localisation des acheteurs à l'échelle mondiale, des analyses détaillées des recettes et des bénéfices par mois et par jour, ainsi que la répartition des ventes par catégorie. De plus, il permet de consulter la liste des administrateurs et de suivre la performance des ventes.</p>   
     </div> 
   </div>
 
   {/* Div vert avec carte contenant une vidéo */}
   <div className="flex justify-end white w-full mt-10">
   <ProxibanqueTitle/>
-    <div className="m-4 bg-white shadow-lg rounded-lg max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full h-auto p-4 mr-11">
+    <div className="m-4 bg-slate-800 shadow-lg rounded-lg max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full h-auto p-4 mr-11">
       {/* Intégration vidéo */}
       <video className="w-full h-auto rounded"autoPlay muted >
-        <source src="/adele-someone-like-you_843273.mp4" type="video/mp4" />  
+        <source src="/proxibanque.mp4" type="video/mp4" />  
       </video>
+      <p className="text-justify text-white">Proxibanque est un logiciel bancaire qui permet aux conseillers de gérer les comptes clients, effectuer des opérations CRUD, des virements, consulter l'historique des transactions, simuler des crédits, et aux responsables de superviser les conseillers.</p>
     </div>
   </div>
 
   {/* Div bleu avec carte contenant une vidéo */}
   <div className="flex justify-start white w-full mt-10">
-    <div className="m-4 bg-white shadow-lg rounded-lg max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full h-auto p-4 ml-10">
+    <div className="m-4 bg-slate-800 shadow-lg rounded-lg max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl w-full h-auto p-4 ml-10">
       {/* Intégration vidéo */}
       <video className="w-full h-auto rounded" autoPlay muted>
         <source src="/curlybrace.mp4" type="video/mp4" />
       </video>
+      <p className="text-justify text-white">Curlybrace est une application web qui facilite la communication entre développeurs du monde entier. Elle offre une plateforme pour l'entraide, la recherche d'emplois dans la tech, le partage de projets et la mise en relation des membres, tout en permettant de visualiser leur emplacement sur le globe terrestre.</p>
     </div>
     <CurlybraceTitle/>
   </div>

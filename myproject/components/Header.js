@@ -10,8 +10,6 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import CoPresentIcon from "@mui/icons-material/CoPresent";
 
-
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
@@ -20,9 +18,8 @@ export default function Header() {
     setMenuOpen(!menuOpen);
   };
 
-  
   return (
-    <header className="bg-slate-800 text-white p-4 w-full z-50 fixed " >
+    <header className="bg-slate-800 text-white p-4 w-full z-50 fixed ">
       <div className="flex items-center justify-between">
         <Stack direction="row" spacing={2}>
           <Avatar alt="photo" src="/photo.png" sx={{ width: 56, height: 56 }} />
@@ -31,8 +28,7 @@ export default function Header() {
           {menuOpen ? <CloseIcon color="white" /> : <MenuIcon color="white" />}
         </button>
         <nav className={`lg:flex ${menuOpen ? "block" : "hidden"}`}>
-          <Link  href="/">
-          
+          <Link href="/">
             <div
               className={`block lg:inline-block px-2 py-1 ${
                 router.pathname === "/" ? "bg-gray-800" : ""
@@ -41,10 +37,8 @@ export default function Header() {
               <HomeIcon sx={{ mr: 0.8, color: "white" }} />
               Home
             </div>
-            
           </Link>
           <Link href="/about">
-         
             <div
               className={`block lg:inline-block px-2 py-1 ${
                 router.pathname === "/about" ? "bg-gray-600" : ""
@@ -53,9 +47,8 @@ export default function Header() {
               <CoPresentIcon sx={{ mr: 0.8, color: "white" }} />
               About
             </div>
-          
           </Link>
-          <Link href="/project" >
+          <Link href="/project">
             <div
               className={`block lg:inline-block px-2 py-1 ${
                 router.pathname === "/project" ? "bg-gray-600" : ""
@@ -63,7 +56,7 @@ export default function Header() {
             >
               <KeyboardIcon sx={{ mr: 0.8, color: "white" }} />
               Project
-            </div> 
+            </div>
           </Link>
         </nav>
       </div>
