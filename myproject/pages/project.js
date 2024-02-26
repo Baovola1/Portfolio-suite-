@@ -5,7 +5,7 @@ export default function Project() {
 
   const GlobalVisionTitle = () => {
     const title = "GLOBALVISION".split('').map((letter, index) => (
-      <span key={index} className="block">{letter}</span>
+      <span key={index} className="block text-3xl text-red-400/60">{letter}</span>
     ));
 
     return (
@@ -16,7 +16,7 @@ export default function Project() {
   };
   const ProxibanqueTitle = () => {
     const title = "PROXIBANQUESI".split('').map((letter, index) => (
-      <span key={index} className="block">{letter}</span>
+      <span key={index} className="block text-3xl text-blue-800/60">{letter}</span>
     ));
 
     return (
@@ -27,7 +27,7 @@ export default function Project() {
   };
   const CurlybraceTitle = () => {
     const title = "CURLYBRACE".split('').map((letter, index) => (
-      <span key={index} className="block">{letter}</span>
+      <span key={index} className="block text-3xl text-purple-400/60">{letter}</span>
     ));
 
     return (
@@ -41,6 +41,7 @@ export default function Project() {
     <>
     <div className="flex flex-col items-center justify-center min-h-screen white">
     <h1 className={`${styles.growTextAnimation} text-center uppercase text-4xl font-bold `}>Project</h1>
+    <p className="p-5 text-lg ">Je vous présente quelques-uns des projets que j'ai réalisés.Ces défis m'ont non seulement permis de monter en compétences, mais aussi de me confronter à des problèmes complexes.Ils m'ont poussé à repousser mes limites en cherchant des solutions innovantes et à développer ma capacité à travailler en équipe.</p>
   <div className="flex flex-col items-center justify-center space-y-4 w-full">
   {/* Div rouge avec carte contenant une vidéo */}
   <div className="flex justify-start white w-full mt-10">

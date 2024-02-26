@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 export default function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [name, setName] = useState('');
@@ -70,8 +71,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-slate-800 text-white p-4 w-full mt-10 flex flex-col md:flex-row justify-center items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center w-full">
+    <footer className="bg-slate-800 text-white p-4 w-full mt-10 flex flex-col md:flex-row justify-center items-center md:justify-end">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full md:justify-end ">
         <img
           onClick={toggleModal}
           className="rounded-full w-32 h-32 md:w-48 md:h-48 object-cover cursor-pointer"
