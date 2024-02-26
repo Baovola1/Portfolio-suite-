@@ -14,7 +14,7 @@ export default function Footer() {
     if (errorMessage) {
       timer = setTimeout(() => {
         setErrorMessage('');
-      }, 5000);
+      }, 3000);
     }
     // Fonction de nettoyage pour effacer le timeout
     return () => clearTimeout(timer);
@@ -24,8 +24,9 @@ export default function Footer() {
     let timer;
     if (successMessage) {
       timer = setTimeout(() => {
+        setIsModalOpen(false);
         setSuccessMessage('');
-      }, 5000);
+      }, 3000);
     }
     // Fonction de nettoyage pour effacer le timeout
     return () => clearTimeout(timer);
@@ -71,8 +72,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-slate-800 text-white p-4 w-full mt-10 flex flex-col md:flex-row justify-center items-center md:justify-end">
-      <div className="flex flex-col md:flex-row justify-center items-center w-full md:justify-end ">
+    <footer className="bg-slate-800 text-white p-4 w-full mt-10 flex flex-col md:flex-row justify-center items-center ">
+      <div className="flex flex-col md:flex-row justify-center items-center w-full  ">
         <img
           onClick={toggleModal}
           className="rounded-full w-32 h-32 md:w-48 md:h-48 object-cover cursor-pointer"
@@ -81,6 +82,7 @@ export default function Footer() {
         />
          
         {isModalOpen && (
+          
           <div className="mt-4 md:mt-0 md:ml-10 bg-blue-800/60 backdrop-blur border border-white/50 text-black p-4 rounded-lg w-full md:max-w-xs">
             <h2 className="text-lg font-semibold mb-4 text-center text-white">Vous pouvez laisser votre message 😊</h2>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -113,5 +115,6 @@ export default function Footer() {
         )}
       </div>
     </footer>
+
   );
 }
