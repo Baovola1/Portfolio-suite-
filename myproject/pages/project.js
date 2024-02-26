@@ -41,7 +41,7 @@ export default function Project() {
     <>
     <div className="flex flex-col items-center justify-center min-h-screen white">
     <h1 className={`${styles.growTextAnimation} text-center uppercase text-4xl font-bold `}>Project</h1>
-    <p className="p-5 text-lg ">Je vous présente quelques-uns des projets que j'ai réalisés.Ces défis m'ont non seulement permis de monter en compétences, mais aussi de me confronter à des problèmes complexes.Ils m'ont poussé à repousser mes limites en cherchant des solutions innovantes et à développer ma capacité à travailler en équipe.</p>
+    <p className="p-5 text-xl mt-8 ">Je vous présente quelques-uns des projets que j'ai réalisés. Ces défis ont été des opportunités précieuses qui m'ont non seulement permis de développer mes compétences, mais aussi de me confronter à des problèmes complexes. Chaque défi m'a poussé à repousser mes limites et à rechercher des solutions adaptées à chaque situation.</p>
   <div className="flex flex-col items-center justify-center space-y-4 w-full">
   {/* Div rouge avec carte contenant une vidéo */}
   <div className="flex justify-start white w-full mt-10">

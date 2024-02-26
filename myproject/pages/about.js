@@ -76,8 +76,8 @@ export default function About() {
                 {showListOutils && (
                   <ul>
                     <li>Méthodologie AGILE</li>
-                    <li>Trello</li>
-                    <li>User Stories</li>
+                    <li>Méthodologie SCRUM</li>
+                    <li>User Stories-Trello-Kanban</li>
                     <li>Figma-StarUML-Miro-Notion</li>
                     <li>PhpStorm</li>
                     <li>Eclipse IDE for Enterprise</li>
